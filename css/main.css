@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(0, 255, 136); 
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    font-size: 30px
+}
+
+p {
+    font-family: Calibri, sans-serif;
+    font-size: 15px
+}
