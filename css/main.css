@@ -11,6 +11,13 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    color: rgb(102, 20, 20);
+    text-align: right;
+    font-family: Calibri, sans-serif;
+    font-size: 15px;
+}
+
 nav {
     text-align: left;
     font-family: Calibri, sans-serif;
@@ -25,8 +32,4 @@ p {
 
 .space {
     margin-top: 1000px;
-}
-
-.time {
-    margin-left: 650px;
 }
