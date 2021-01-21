@@ -40,11 +40,12 @@ p {
     border: 2px, solid, black;
     background-color: rgb(12, 187, 12);
     color: white;
-    padding: 14px 28px;
+    padding: 15px 30px;
     font-size: 20px;
     cursor: pointer;
     text-align: center;
     margin-left: 35%;
+    border-radius: 10px;
 }
 
 .block:hover {
