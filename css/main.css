@@ -44,6 +44,7 @@ p {
     font-size: 20px;
     cursor: pointer;
     text-align: center;
+    margin-left: 35%;
 }
 
 .block:hover {
