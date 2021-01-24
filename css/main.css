@@ -43,7 +43,7 @@ p {
 .block, .menu {
     display: block;
     width: 300px;
-    border: 2px, solid, black;
+    border: 0px;
     color: white;
     padding: 15px 30px;
     font-size: 20px;
