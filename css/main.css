@@ -9,6 +9,14 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    color: #eeeeee;
+    text-align: left;
+    font-size: 25;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
 nav {
     text-align: left;
     font-size: 15px;
@@ -26,6 +34,10 @@ p {
 
 .space {
     margin-top: 1000px;
+}
+
+.menutop {
+    margin-top: 15%;
 }
 
 .block, .menu {
