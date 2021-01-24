@@ -98,3 +98,11 @@ p {
 .right {
     right: 0;
 }
+
+.copyright {
+    font-size: 10;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: grey;
+    text-align: center;
+}
