@@ -24,6 +24,10 @@ img {
     width: 10%;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 nav {
     text-align: left;
     font-size: 15px;
