@@ -1,45 +1,37 @@
 body {
-    background-color: rgb(0, 255, 136);
+    background-color: #1E1D1D;
     font-family: Calibri, sans-serif;
-    width: 100%;
-    height: 100%;
 }
 
 h1 {
-    color: rgb(102, 20, 20);
+    color: #FFFFFF;
     text-align: center;
     font-size: 30px;
-}
-
-h2 {
-    color: rgb(102, 20, 20);
-    text-align: right;
-    font-size: 15px;
 }
 
 nav {
     text-align: left;
     font-size: 15px;
     display: block;
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 25%;
+    margin-left: 25%;
 }
 
 p {
     font-size: 20px;
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: #d1d1d1
 }
 
 .space {
     margin-top: 1000px;
 }
 
-.block {
+.block, .menu {
     display: block;
-    width: 30%;
+    width: 300px;
     border: 2px, solid, black;
-    background-color: rgb(12, 187, 12);
     color: white;
     padding: 15px 30px;
     font-size: 20px;
@@ -47,6 +39,16 @@ p {
     text-align: center;
     margin: auto;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block {
+    background-color: rgb(12, 187, 12);
+}
+
+.menu {
+    background-color: #121212
 }
 
 .block:hover {
@@ -54,22 +56,25 @@ p {
     color: white;
 }
 
-.left {
-    width: 250px;
+.menu:hover {
+    background-color: #2f2f2f;
+    color: white;
+}
+
+.left, .right {
+    width: 20%;
     height: 100%;
     position: fixed;
-    background-color: rgb(69, 115, 214);
+    background-color: #2D2D2D;
     display: block;
     top: 0;
+    bottom: 0;
+}
+
+.left {
     left: 0;
 }
 
 .right {
-    width: 250px;
-    height: 100%;
-    position: fixed;
     right: 0;
-    background-color: rgb(69, 115, 214);
-    display: block;
-    top: 0;
 }
