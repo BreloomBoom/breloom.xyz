@@ -17,6 +17,13 @@ h2 {
     margin-left: 25%;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
 nav {
     text-align: left;
     font-size: 15px;
@@ -37,7 +44,7 @@ p {
 }
 
 .menutop {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .block, .menu {
