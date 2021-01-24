@@ -22,9 +22,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 10%;
-}
-
-img:hover {
     cursor: pointer;
 }
 
