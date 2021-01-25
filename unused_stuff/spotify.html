@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What am I listening to?</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+
+    <body>
+        <div class="left"></div>
+        <div class="right"></div>
+
+        </br> </br>
+
+        <button type="button" class="back" onclick="window.location.href='index.html';"><< Go Back!</button>
+
+        <div id="spotify-widget"></div>
+
+        <script src="https://npmcdn.com/spotifyCurrentlyPlaying.js/dist/spotifyCurrentlyPlaying.min.js"></script>
+        <script>
+        SCP({
+            selector: '#spotify-widget',
+            username: 'BreloomB',
+            api_key: '11365e07e8786e5e6deeca90635624e2',
+            width: '50%',
+            height: '370px'
+        });
+        </script>
+        <script src="path/to/spotifyCurrentlyPlaying.min.js"></script>
+    </body>
+</html>

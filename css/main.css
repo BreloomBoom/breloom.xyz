@@ -106,3 +106,14 @@ p {
     color: grey;
     text-align: center;
 }
+
+.back {
+    display: block;
+    color: white;
+    background-color: #2d2d2d;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 25%;
+    margin-left: 25%;
+    border: 0px;
+}
