@@ -110,10 +110,15 @@ p {
 .back {
     display: block;
     color: white;
-    background-color: #2d2d2d;
+    background-color: #1E1D1D;
     cursor: pointer;
     border-radius: 2px;
     margin-right: 25%;
     margin-left: 25%;
     border: 0px;
+    font-size: 15;
+}
+
+.back:hover {
+    background-color: #2f2f2f;
 }
