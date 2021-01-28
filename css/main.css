@@ -11,7 +11,6 @@ h1 {
 
 h2 {
     color: #eeeeee;
-    text-align: left;
     font-size: 25;
     margin-right: 25%;
     margin-left: 25%;
@@ -100,7 +99,6 @@ p {
 }
 
 .copyright {
-    font-size: 10;
     margin-right: 25%;
     margin-left: 25%;
     color: grey;
@@ -112,13 +110,25 @@ p {
     color: white;
     background-color: #1E1D1D;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-right: 25%;
     margin-left: 25%;
     border: 0px;
-    font-size: 15;
+    font-size: 15px;
 }
 
 .back:hover {
     background-color: #2f2f2f;
+}
+
+.container {
+
+}
+
+.btitle {
+    
+}
+
+.bdesc {
+    
 }
