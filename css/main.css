@@ -16,7 +16,7 @@ h2 {
     margin-left: 25%;
 }
 
-img {
+.logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -131,4 +131,12 @@ p {
 
 .bdesc {
     
+}
+
+.github{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    cursor: pointer;
 }
