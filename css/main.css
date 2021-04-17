@@ -67,17 +67,15 @@ p {
 }
 
 .menu {
-    background-color: #121212
+    background-color: #121212;
 }
 
 .block:hover {
     background-color: rgb(84, 241, 84);
-    color: white;
 }
 
 .menu:hover {
     background-color: #2f2f2f;
-    color: white;
 }
 
 .left, .right {
@@ -153,10 +151,30 @@ p {
     color: #d1d1d1
 }
 
-.github{
+.github {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 5%;
     cursor: pointer;
+}
+
+.unselected {
+    display: block;
+    width: 100px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    background-color: #121212;
+}
+
+.unselected:hover {
+    background-color: #2f2f2f;
 }
