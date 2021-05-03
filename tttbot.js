@@ -51,74 +51,74 @@ function checkWinner() {
 function getMousePos() {
     var rect = screen.canvas.getBoundingClientRect();
     return {
-      x: window.event.clientX - rect.left,
-      y: window.event.clientY - rect.top
+        x: window.event.clientX - rect.left,
+        y: window.event.clientY - rect.top
     };
 }
         
 function mousePressed() {
-  let {x,y} = getMousePos();
-  let col = floor(y/150);
-  let row = floor(x/150);
-  if (board[row][col] == '') {
-    if (currentPlayer == player) {
-      board[row][col] = player;
-      currentPlayer = bot;
+    let {x,y} = getMousePos();
+    let col = floor(y/150);
+    let row = floor(x/150);
+    if (board[row][col] == '') {
+        if (currentPlayer == player) {
+            board[row][col] = player;
+            currentPlayer = bot;
+        }
     }
-  }
 }
 
 function botMove() {
-  let bestScore = -Infinity;
-  let move;
-  for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-      if (board[i][j] == '') {
-        board[i][j] = bot;
-        let score = minimax(board, 0, false);
-        if (score > bestScore) {
-          bestScore = score;
-          move = {i,j};
+    let bscore = -Infinity;
+    let move;
+    for (i = 0; i<3; i++) {
+        for (j = 0; j<3; j++) {
+            if (board[i][j] == '') {
+                board[i][j] = bot;
+                let score = minimax(board, 0, false);
+                board[i][j] = '';
+                if (score > bscore) {
+                    bscore = score;
+                    move = {i,j};
+                }
+            }
         }
-        board[i][j] = '';
-      }
     }
-  }
-  board[move.i][move.j] = bot;
-  currentPlayer = player;
+    board[move.i][move.j] = bot;
+    currentPlayer = player;
 }
-  
-function minimax(board, depth, isMaximizing) {
-  let result = checkWinner();
-  if (result !== null) {
-    return scores[result];
-  } else if (isMaximizing) {
-    let bestScore = -Infinity;
-    for (let i = 0; i < 3; i++) {
-      for (let j = 0; j < 3; j++) {
-        if (board[i][j] == '') {
-          board[i][j] = bot;
-          let score = minimax(board, depth++, false);
-          board[i][j] = '';
-          bestScore = max(score, bestScore);
+
+function minimax(board, depth, maxing) {
+    let result = checkWinner();
+    if (result != null) {
+        return scores[result]
+    } else if (maxing) {
+        let bscore = -Infinity;
+        for (i = 0; i<3; i++) {
+            for (j = 0; j<3; j++) {
+                if (board[i][j] == '') {
+                    board[i][j] = bot;
+                    let score = minimax(board, depth+1, false);
+                    board[i][j] = '';
+                    bscore = max(score, bscore);
+                }
+            }
         }
-      }
-    }
-    return bestScore;
-  } else {
-    let bestScore = Infinity;
-    for (let i = 0; i < 3; i++) {
-      for (let j = 0; j < 3; j++) {
-        if (board[i][j] == '') {
-          board[i][j] = player;
-          let score = minimax(board, depth++, true);
-          board[i][j] = '';
-          bestScore = min(score, bestScore);
+        return bscore
+    } else {
+        let bscore = Infinity;
+        for (i = 0; i<3; i++) {
+            for (j = 0; j<3; j++) {
+                if (board[i][j] == '') {
+                    board[i][j] = player;
+                    let score = minimax(board, depth+1, true);
+                    board[i][j] = '';
+                    bscore = min(score, bscore);
+                }
+            }
         }
-      }
+        return bscore
     }
-    return bestScore;
-  }
 }
 
 function draw() {
