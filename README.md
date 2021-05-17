@@ -1,4 +1,5 @@
-<u>hopefully my working site</u>
+~~hopefully my working site~~
+not anymore im building a new site which should be better and less bad
 
 just a place to chuck some of the stuff i do
 
